@@ -16,6 +16,7 @@
     "compile": "tsc",
     "fix": "gts fix",
     "dev": "nodemon src/index.ts",
+    "st":"node build/src/index.js",
     "start": "yarn clean && yarn compile && node build/src/index.js"
   },
   "devDependencies": {

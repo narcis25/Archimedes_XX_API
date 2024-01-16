@@ -10,4 +10,4 @@ COPY . ./
 RUN npm run compile
 RUN rm -rf ./src
 
-CMD [ "npm", "start" ]
+CMD [ "npm", "st" ]
