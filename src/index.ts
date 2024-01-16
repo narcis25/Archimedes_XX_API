@@ -2,7 +2,7 @@ import express, {Request, Response} from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import morgan from 'morgan';
-import {initializeApp} from 'firebase-admin/app';
+//import {initializeApp} from 'firebase-admin/app';
 import {MessageRouter} from './router/MessageRouter';
 import {ALLOW_ORIGIN} from './const';
 
@@ -23,7 +23,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(morgan('combined'));
 
-initializeApp();
+//initializeApp();
 
 app.get('/', (req: Request, res: Response) => {
   res.send('Hello World!');
