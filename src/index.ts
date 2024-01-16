@@ -6,7 +6,7 @@ import {initializeApp} from 'firebase-admin/app';
 import {MessageRouter} from './router/MessageRouter';
 
 const app = express();
-//app.use(cors({origin: 'http://localhost:3000'}));
+app.use(cors({origin: 'http://localhost:3000'}));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(morgan('combined'));
