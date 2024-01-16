@@ -13,9 +13,15 @@ app.use(morgan('combined'));
 
 initializeApp();
 
-app.get('/', (req: Request, res: Response) => {
+/*app.get('/', (req: Request, res: Response) => {
   res.send('Hello World!');
 });
+
+app.post('/', (req: Request, res: Response) => {
+  console.log('POST!!!!???????');
+  //res.send('Hello World!');
+});*/
+
 app.use(MessageRouter);
 
 const port = parseInt(`${process.env.PORT}`) || 8080;
